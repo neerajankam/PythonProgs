@@ -3,7 +3,7 @@ class Stack:
 		#Creating an empty list which will be used to replicate the stack functionality
 		self.items = [] 
 
-	def length(self):
+	def size(self):
 		return len(self.items)
 
 	def isEmpty(self):
