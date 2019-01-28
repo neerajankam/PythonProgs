@@ -7,11 +7,11 @@ class Node:
 class BinaryTree:
 	def __init__(self,root):
 		self.root = Node(root)
-#             1
+#                         1
 #			/   \
-#		   2     3
-#		  / \	/	
-#		4 	 5 6
+#		       2     3
+#		      / \    /	
+#		     4   5  6
 b = BinaryTree(1)
 b.root.left = Node(2)
 b.root.right = Node(3)
