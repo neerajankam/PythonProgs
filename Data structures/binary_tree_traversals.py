@@ -26,6 +26,8 @@ def pre_order_traversal(start,traversal):
 		traversal = pre_order_traversal(start.left,traversal)
 		traversal = pre_order_traversal(start.right,traversal)
 	return traversal
+
+
 #Left,Root,Right  Expected output: 4-2-5-1-6-3
 def in_order_traversal(start,traversal):
 	if start:
@@ -33,6 +35,8 @@ def in_order_traversal(start,traversal):
 		traversal += str(start.value) + '-'
 		traversal = in_order_traversal(start.right,traversal)
 	return traversal
+
+
 #Left,Right,Root  Expected output: 4-5-2-6-3-1
 def post_order_traversal(start,traversal):
 	if start:
