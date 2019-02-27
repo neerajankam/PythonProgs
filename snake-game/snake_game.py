@@ -19,7 +19,6 @@ scr.tracer(0) #Turns off the screen updates
 segments = []
 
 #Creating the snake head and setting its properties
-
 head = turtle.Turtle()
 head.speed(0)
 head.shape("square")
@@ -90,14 +89,11 @@ scr.onkeypress(go_down,"k")
 scr.onkeypress(go_left,"j")
 scr.onkeypress(go_right,"l")
 
-
 #Main game loop
-
 while True:
     scr.update()
 
     #Check for border collisions
-
     if head.xcor() > 290 or head.xcor() < -290 or head.ycor() > 290 or head.ycor() < -290:
         time.sleep(1)
         head.goto(0,0)
