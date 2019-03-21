@@ -34,7 +34,7 @@ city_dict = {"Orlando":4167147, "Irvine": 535977}
 
 
 #Function to connect to MondoDB database
-def connectMongo():
+def connect_mongo():
 	client = py.MongoClient("mongodb+srv://neeraj:weather@weathertrack-vczxo.mongodb.net/test?retryWrites=true")
 	return client
 
