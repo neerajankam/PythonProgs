@@ -46,8 +46,8 @@ def daily_forecast():
 
 #Function to display a list of cities
 def display_cities():    
-    print("The available list of cities to track hourly forecast are:")
-    for k, v in city_dict.items():
+   	 print("The available list of cities to track hourly forecast are:")
+    	 for k, v in city_dict.items():
 		print k ,"-", v
 
 #Function to send the api request to openweatherapi. Returns the response and the city id of selected city
@@ -84,7 +84,7 @@ def hourly_forecast():
 
 #Function to insert the obtained forecast values into MongoDB
 def insert_values_mongodb(zipped_vals):
-	client = connectMongo()
+	client = connect_mongo()
 	db = client["test"]
 	collection = db["hourly_forecast"]
 	collection.insert(zipped_vals)
